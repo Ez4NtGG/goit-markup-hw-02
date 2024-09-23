@@ -1,53 +1,102 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-}
 
-.container {
-  padding: 20px;
-}
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-h1, h2, h3 {
-  text-align: center;
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
 
-.services {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+    h1, h2, h3 {
+      text-align: center;
+    }
 
-.service {
-  width: 30%;
-  margin-bottom: 20px;
-  text-align: center;
-}
+    /* Header Styles */
+    header {
+      background-color: #222;
+      color: white;
+      padding: 2rem 0;
+    }
 
-.team {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+    /* Navigation Styles */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.member {
-  width: 20%;
-  margin-bottom: 20px;
-  text-align: center;
-}
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
-.portfolio {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+    nav li {
+      margin-right: 2rem;
+    }
 
-.project {
-  width: 30%;
-  margin-bottom: 20px;
-  text-align: center;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+    /* Hero Section Styles */
+    .hero {
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Services Section Styles */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service {
+      width: 30%;
+      margin-bottom: 2rem;
+    }
+
+    /* Team Section Styles */
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .team-member {
+      width: 23%;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* Portfolio Section Styles */
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .portfolio-item {
+      width: 30%;
+      margin-bottom: 2rem;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
