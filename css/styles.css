@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
