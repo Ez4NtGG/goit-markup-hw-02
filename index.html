@@ -1,116 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>WebStudio</title>
-
-  <link rel="stylesheet" href="css/normalize.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #3f3d56;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        header nav ul li {
+            display: inline;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-color: #3f3d56;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .services, .team, .portfolio {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .services div, .team div, .portfolio div {
+            width: 200px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #3f3d56;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Логотип у вигляді посилання -->
-      <a href="./index.html">WebStudio</a>
-  
-      <!-- Навігаційне меню -->
-      <ul>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </nav>
-  
-    <!-- Список контактів в тегу address -->
-    <address>
-      <ul>
-        <!-- Пункт із поштовою адресою -->
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <!-- Пункт з номером телефону -->
-        <li>
-          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
-    </address>
-  </header>
-  
 
-  <main>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>WEBSTUDIO</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="contact-info">
+                <p>info@webstudio.com | +1 (555) 123-4567</p>
+            </div>
+        </nav>
+    </header>
+
     <section class="hero">
-      <h1>Effective Solutions for Your Business</h1>
-      <button type="button">Order Service</button>
+        <h2>Effective Solutions for Your Business</h2>
+        <button>Order Services</button>
     </section>
 
-    <section>
-      <!-- Заголовок секції (прихований в майбутньому) -->
-      <h2>Our Key Features</h2>
-    
-      <ul>
-        <!-- Перший елемент списку особливостей -->
-        <li>
-          <h3>Strategy</h3>
-          <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-        </li>
-    
-        <!-- Другий елемент списку особливостей -->
-        <li>
-          <h3>Punctuality</h3>
-          <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-        </li>
-    
-        <!-- Третій елемент списку особливостей -->
-        <li>
-          <h3>Diligence</h3>
-          <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-        </li>
-    
-        <!-- Четвертий елемент списку особливостей -->
-        <li>
-          <h3>Technologies</h3>
-          <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-        </li>
-      </ul>
+    <section class="section services">
+        <div>
+            <h3>Strategy</h3>
+            <p>Business strategy to increase the effectiveness and provide solutions.</p>
+        </div>
+        <div>
+            <h3>Productivity</h3>
+            <p>Providing solutions to maximize efficiency and improve team cooperation.</p>
+        </div>
+        <div>
+            <h3>Delegation</h3>
+            <p>Delegate tasks effectively and achieve better results.</p>
+        </div>
+        <div>
+            <h3>Technologies</h3>
+            <p>Using modern technologies to boost your business processes.</p>
+        </div>
     </section>
-    
 
-    <section class="team">
-      <h2>Our Team</h2>
-      <ul>
-        <li>
-          <img src="/images/foto1.jpg" alt="Mark Guerrero - Product Designer" width="264" />
-          <h3>Mark Guerrero</h3>
-          <p>Product Designer</p>
-        </li>
-        <li>
-          <img src="/images/foto2.jpg" alt="Tom Ford - Frontend Developer" width="264" />
-          <h3>Tom Ford</h3>
-          <p>Frontend Developer</p>
-        </li>
-        <li>
-          <img src="/images/foto3.jpg" alt="Camila Garcia - Marketing" width="264" />
-          <h3>Camila Garcia</h3>
-          <p>Marketing</p>
-        </li>
-        <li>
-          <img src="/images/foto4.jpg" alt="Daniel Wilson - UI Designer" width="264" />
-          <h3>Daniel Wilson</h3>
-          <p>UI Designer</p>
-        </li>
-      </ul>
+    <section class="section team">
+        <h2>Our Team</h2>
+        <div>
+            <img src="foto1.jpg" alt="Mark Guerrero" style="width:100%;">
+            <h4>Mark Guerrero</h4>
+            <p>Product Designer</p>
+        </div>
+        <div>
+            <img src="foto2.jpg" alt="Tom Ford" style="width:100%;">
+            <h4>Tom Ford</h4>
+            <p>Frontend Developer</p>
+        </div>
+        <div>
+            <img src="foto3.jpg" alt="Camila Garcia" style="width:100%;">
+            <h4>Camila Garcia</h4>
+            <p>Marketing</p>
+        </div>
+        <div>
+            <img src="foto4.jpg" alt="Daniel Wilson" style="width:100%;">
+            <h4>Daniel Wilson</h4>
+            <p>UI/UX Designer</p>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <!-- Логотип у вигляді посилання -->
-    <a href="./index.html">WebStudio</a>
-  
-    <!-- Параграф з текстовим контентом -->
-    <p>
-      Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-    </p>
-  </footer>  
+    <section class="section portfolio">
+        <h2>Our Portfolio</h2>
+        <div>
+            <img src="img1.jpg" alt="Banking App">
+            <p>Banking App</p>
+        </div>
+        <div>
+            <img src="img2.jpg" alt="Contactless Payment">
+            <p>Contactless Payment</p>
+        </div>
+        <div>
+            <img src="img3.jpg" alt="Meditation App">
+            <p>Meditation App</p>
+        </div>
+        <div>
+            <img src="img4.jpg" alt="Tool Service">
+            <p>Tool Service</p>
+        </div>
+        <div>
+            <img src="img5.jpg" alt="Screen Illustrations">
+            <p>Screen Illustrations</p>
+        </div>
+        <div>
+            <img src="img6.jpg" alt="Online Courses">
+            <p>Online Courses</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© WEBSTUDIO 2024 - Creative solutions for businesses and individuals. Enhancing your digital presence with innovative design and development.</p>
+    </footer>
+
 </body>
 </html>
