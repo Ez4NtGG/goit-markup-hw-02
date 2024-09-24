@@ -5,176 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Solutions</title>
     <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: #3f3d56;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 50px;
-        }
-        header nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        header nav ul li {
-            display: inline;
-        }
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .hero {
-            background-color: #3f3d56;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero button {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .section {
-            text-align: center;
-            padding: 50px 0;
-        }
-        .services, .team, .portfolio {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        .services div, .team div, .portfolio div {
-            width: 200px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .portfolio img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #3f3d56;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <div class="logo">
-                <h1>WEBSTUDIO</h1>
+                <h1 class="logo-text">WEBSTUDIO</h1>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Team</a></li>
+                <li><a href="#" class="nav-link">Portfolio</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
             </ul>
             <div class="contact-info">
-                <p>info@webstudio.com | +1 (555) 123-4567</p>
+                <p>info@webstudio.com | +11 (000) 111-11-11</p>
             </div>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Effective Solutions for Your Business</h2>
-        <button>Order Services</button>
+        <h2 class="hero-title">Effective Solutions for Your Business</h2>
+        <button class="btn-primary">Order Services</button>
     </section>
 
     <section class="section services">
-        <div>
-            <h3>Strategy</h3>
-            <p>Business strategy to increase the effectiveness and provide solutions.</p>
+        <div class="service">
+            <h3 class="service-title">Strategy</h3>
+            <p class="service-text">Business strategy to increase the effectiveness and provide solutions.</p>
         </div>
-        <div>
-            <h3>Productivity</h3>
-            <p>Providing solutions to maximize efficiency and improve team cooperation.</p>
+        <div class="service">
+            <h3 class="service-title">Productivity</h3>
+            <p class="service-text">Providing solutions to maximize efficiency and improve team cooperation.</p>
         </div>
-        <div>
-            <h3>Delegation</h3>
-            <p>Delegate tasks effectively and achieve better results.</p>
+        <div class="service">
+            <h3 class="service-title">Delegation</h3>
+            <p class="service-text">Delegate tasks effectively and achieve better results.</p>
         </div>
-        <div>
-            <h3>Technologies</h3>
-            <p>Using modern technologies to boost your business processes.</p>
+        <div class="service">
+            <h3 class="service-title">Technologies</h3>
+            <p class="service-text">Using modern technologies to boost your business processes.</p>
         </div>
     </section>
 
     <section class="section team">
-        <h2>Our Team</h2>
-        <div>
-            <img src="foto1.jpg" alt="Mark Guerrero" style="width:100%;">
-            <h4>Mark Guerrero</h4>
-            <p>Product Designer</p>
+        <h2 class="section-title">Our Team</h2>
+        <div class="team-member">
+            <!-- Вставлення правильного шляху до зображення -->
+            <img src="images/foto1.jpg" alt="Mark Guerrero" class="team-photo">
+            <h4 class="team-name">Mark Guerrero</h4>
+            <p class="team-role">Product Designer</p>
         </div>
-        <div>
-            <img src="foto2.jpg" alt="Tom Ford" style="width:100%;">
-            <h4>Tom Ford</h4>
-            <p>Frontend Developer</p>
+        <div class="team-member">
+            <img src="images/foto2.jpg" alt="Tom Ford" class="team-photo">
+            <h4 class="team-name">Tom Ford</h4>
+            <p class="team-role">Frontend Developer</p>
         </div>
-        <div>
-            <img src="foto3.jpg" alt="Camila Garcia" style="width:100%;">
-            <h4>Camila Garcia</h4>
-            <p>Marketing</p>
+        <div class="team-member">
+            <img src="images/foto3.jpg" alt="Camila Garcia" class="team-photo">
+            <h4 class="team-name">Camila Garcia</h4>
+            <p class="team-role">Marketing</p>
         </div>
-        <div>
-            <img src="foto4.jpg" alt="Daniel Wilson" style="width:100%;">
-            <h4>Daniel Wilson</h4>
-            <p>UI/UX Designer</p>
+        <div class="team-member">
+            <img src="images/foto4.jpg" alt="Daniel Wilson" class="team-photo">
+            <h4 class="team-name">Daniel Wilson</h4>
+            <p class="team-role">UI/UX Designer</p>
         </div>
     </section>
 
     <section class="section portfolio">
-        <h2>Our Portfolio</h2>
-        <div>
-            <img src="img1.jpg" alt="Banking App">
-            <p>Banking App</p>
+        <h2 class="section-title">Our Portfolio</h2>
+        <div class="portfolio-item">
+            <!-- Вставлення правильного шляху до зображення -->
+            <img src="images/img1.jpg" alt="Banking App" class="portfolio-img">
+            <p class="portfolio-text">Banking App</p>
         </div>
-        <div>
-            <img src="img2.jpg" alt="Contactless Payment">
-            <p>Contactless Payment</p>
+        <div class="portfolio-item">
+            <img src="images/img2.jpg" alt="Contactless Payment" class="portfolio-img">
+            <p class="portfolio-text">Contactless Payment</p>
         </div>
-        <div>
-            <img src="img3.jpg" alt="Meditation App">
-            <p>Meditation App</p>
+        <div class="portfolio-item">
+            <img src="images/img3.jpg" alt="Meditation App" class="portfolio-img">
+            <p class="portfolio-text">Meditation App</p>
         </div>
-        <div>
-            <img src="img4.jpg" alt="Tool Service">
-            <p>Tool Service</p>
+        <div class="portfolio-item">
+            <img src="images/img4.jpg" alt="Tool Service" class="portfolio-img">
+            <p class="portfolio-text">Tool Service</p>
         </div>
-        <div>
-            <img src="img5.jpg" alt="Screen Illustrations">
-            <p>Screen Illustrations</p>
+        <div class="portfolio-item">
+            <img src="images/img5.jpg" alt="Screen Illustrations" class="portfolio-img">
+            <p class="portfolio-text">Screen Illustrations</p>
         </div>
-        <div>
-            <img src="img6.jpg" alt="Online Courses">
-            <p>Online Courses</p>
+        <div class="portfolio-item">
+            <img src="images/img6.jpg" alt="Online Courses" class="portfolio-img">
+            <p class="portfolio-text">Online Courses</p>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>© WEBSTUDIO 2024 - Creative solutions for businesses and individuals. Enhancing your digital presence with innovative design and development.</p>
     </footer>
 
