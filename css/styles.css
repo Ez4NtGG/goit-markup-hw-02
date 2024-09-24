@@ -1,105 +1,137 @@
-/* C1 - Using class selectors */
-body {
-    font-family: 'Roboto', sans-serif; /* C5, C6, C7 */
-    color: #333; /* C8 */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 header {
-    background-color: #333;
-    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .contact-info {
     text-align: right;
 }
 
-header a {
+.hero {
+    background-color: #35384E;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0275d8;
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
-    transition: color 0.3s ease; /* C4 */
+    border-radius: 5px;
 }
 
-header a:hover,
-header a:focus {
-    color: #ff9800; /* C4 */
-}
-
-/* Main content styling */
-.portfolio-section {
+.services {
+    padding: 50px 0;
     text-align: center;
-    padding: 40px;
-    background-color: #f5f5f5; /* C11 */
 }
 
-.portfolio-title {
-    font-family: 'Raleway', sans-serif; /* Custom font for specific elements */
-    font-size: 32px; /* C9 */
-    font-weight: 700; /* C12 */
-    line-height: 1.2; /* C10 */
-    color: #333; /* C11 */
-    margin-bottom: 20px;
-}
-
-.portfolio-list {
+.services .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
+    flex-wrap: wrap;
 }
 
-.portfolio-item {
+.services .service {
+    width: 22%;
+    margin: 20px 0;
+}
+
+.team {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 40px;
+}
+
+.team .team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team .team-member {
+    text-align: center;
+}
+
+.team .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.portfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfolio-item {
     width: 30%;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+    margin-bottom: 30px;
 }
 
-.portfolio-item img {
+.portfolio .portfolio-item img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-.portfolio-item-title {
-    font-size: 18px; /* C9 */
-    font-weight: 500; /* C12 */
-    margin-top: 10px;
-    line-height: 1.5; /* C10 */
-}
-
-.portfolio-item-category {
-    font-size: 14px; /* C9 */
-    color: #666; /* C11 */
-    line-height: 1.4; /* C10 */
-}
-
-/* C3 - Hover and focus effects for interactive elements */
-button, a {
-    cursor: pointer; /* C13 */
-}
-
-button:hover, button:focus,
-a:hover, a:focus {
-    background-color: #ff9800; /* C3 */
-    color: #fff; /* C11 */
-    transition: background-color 0.3s ease, color 0.3s ease; /* C3 */
-}
-
-/* Footer styling */
 footer {
-    background-color: #333; /* C11 */
-    color: #fff; /* C11 */
-    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    font-size: 14px; /* C9 */
-    line-height: 1.5; /* C10 */
-}
-
-footer a {
-    color: #ff9800;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover, footer a:focus {
-    color: #fff; /* C4 */
 }
