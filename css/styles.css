@@ -1,114 +1,177 @@
-/* C5, C6, C7, C8: Основні стилі для body */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333; /* Домінантний колір тексту */
+/* Основні стилі */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* C1, C2: Оформлення для заголовків */
-h1, h2, h3, h4 {
-    margin: 0 0 20px 0;
-    color: #2C3E50; /* Відповідно до макета */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.5;
 }
 
-h1 {
-    font-size: 2.5rem; /* C9: Точний розмір шрифту */
-    font-weight: 700; /* C12: Вага шрифту */
+/* Хедер */
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-h2 {
-    font-size: 2rem; /* C9 */
-    font-weight: 500; /* C12 */
+.nav {
+    display: flex;
+    align-items: center;
 }
 
-h3, h4 {
-    font-size: 1.5rem; /* C9 */
-    font-weight: 500; /* C12 */
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1b1b1f;
 }
 
-/* C10: Висота рядка для текстових елементів */
-p {
-    line-height: 1.5; /* Задано як множник */
-    font-size: 1rem; /* C9 */
-    color: #666; /* Трохи темніше для тексту */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
 }
 
-/* C1, C2: Оформлення для кнопок */
-.btn-primary {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer; /* C13 */
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-/* C3: Стан hover і focus для кнопки */
-.btn-primary:hover, .btn-primary:focus {
-    background-color: #2980b9; /* Зміна кольору */
-    outline: none;
-}
-
-/* C1, C2: Оформлення для посилань */
 .nav-link {
-    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* C3: Стан hover і focus для посилань */
-.nav-link:hover, .nav-link:focus {
-    color: #3498db; /* Зміна кольору */
-    outline: none;
-}
-
-/* C4: Оформлення контактної інформації в хедері */
-.contact-info p {
-    margin: 0;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-/* C4: Стан hover і focus для контактів */
-.contact-info p:hover, .contact-info p:focus {
-    color: #3498db; /* Зміна кольору */
-    outline: none;
-}
-
-/* Оформлення заголовків секцій */
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 40px;
+    color: #1b1b1f;
+    margin: 0 20px;
     font-weight: 500;
-    color: #2C3E50;
 }
 
-/* Оформлення для сервісів і портфоліо */
-.service, .portfolio-item, .team-member {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
+.nav-link:hover {
+    color: #007bff;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-info:hover {
+    color: #007bff;
+}
+
+/* Герой секція */
+.hero {
+    background-color: #303247;
+    color: white;
     text-align: center;
-    transition: transform 0.3s ease;
+    padding: 100px 20px;
 }
 
-/* Стан hover для елементів */
-.service:hover, .portfolio-item:hover, .team-member:hover {
-    transform: scale(1.05); /* Легка анімація збільшення */
+.hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-/* Оформлення для фотографій */
-.team-photo, .portfolio-img {
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Сервіси */
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.service {
+    width: 23%;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.service-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Команда */
+.team {
+    text-align: center;
+    margin: 60px auto;
+    padding: 0 10%;
+}
+
+.team-member {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1.5%;
+    vertical-align: top;
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team-role {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Портфоліо */
+.portfolio {
+    text-align: center;
+    margin: 60px auto;
+    padding: 0 10%;
+}
+
+.portfolio-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    margin-bottom: 20px;
+}
+
+.portfolio-img {
     width: 100%;
     border-radius: 8px;
 }
 
+.portfolio-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
 /* Футер */
 .footer {
-    background-color: #3f3d56;
+    background-color: #303247;
     color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    font-size: 14px;
 }
