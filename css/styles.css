@@ -1,3 +1,4 @@
+/* Modern Normalize already included */
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +6,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; /* Задано як множник */
+    color: #333333; /* Домінантний колір тексту */
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -17,8 +19,8 @@ body {
 }
 
 header {
-    background-color: #222;
-    color: #fff;
+    background-color: #222222;
+    color: #ffffff;
     padding: 20px 0;
 }
 
@@ -38,17 +40,29 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-header .contact-info {
-    text-align: right;
+header nav ul li a:hover,
+header nav ul li a:focus {
+    color: #0275d8; /* Зміна кольору при hover і focus */
+}
+
+.contact-info p {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover,
+.contact-info p:focus {
+    color: #0275d8; /* Зміна кольору тексту контактів при hover і focus */
 }
 
 .hero {
     background-color: #35384E;
-    color: #fff;
+    color: #ffffff;
     padding: 80px 0;
     text-align: center;
 }
@@ -57,9 +71,16 @@ header .contact-info {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #0275d8;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
+    cursor: pointer; /* Задано pointer */
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    background-color: #025aa5; /* Зміна кольору кнопки при hover і focus */
 }
 
 .services {
@@ -67,25 +88,23 @@ header .contact-info {
     text-align: center;
 }
 
-.services .container {
+.services .container ul {
+    list-style: none;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.services .service {
+.services ul li {
     width: 22%;
     margin: 20px 0;
+    font-size: 1rem; /* Розмір шрифту відповідає макету */
 }
 
 .team {
     padding: 50px 0;
-    background-color: #f9f9f9;
     text-align: center;
-}
-
-.team h2 {
-    margin-bottom: 40px;
+    background-color: #ffffff;
 }
 
 .team .team-members {
@@ -93,14 +112,8 @@ header .contact-info {
     justify-content: space-around;
 }
 
-.team .team-member {
-    text-align: center;
-}
-
 .team .team-member img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
 }
 
 .portfolio {
@@ -108,30 +121,39 @@ header .contact-info {
     text-align: center;
 }
 
-.portfolio h2 {
-    margin-bottom: 40px;
-}
-
-.portfolio .portfolio-items {
+.portfolio-items {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.portfolio .portfolio-item {
+.portfolio-item {
     width: 30%;
-    margin-bottom: 30px;
-}
-
-.portfolio .portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #222222;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem; /* Розмір шрифту відповідає макету */
+}
+
+/* Зміни для активних станів */
+a:hover, a:focus, button:hover, button:focus {
+    outline: none;
+    color: #0275d8;
+}
+
+button {
+    cursor: pointer; /* Курсор "pointer" для всіх кнопок */
+}
+
+/* Зміна кольору для інтерактивних елементів */
+button:hover, button:focus, a:hover, a:focus {
+    color: #025aa5; /* Точний колір активного стану */
+    background-color: transparent; /* Прозорий фон для активного стану */
 }
